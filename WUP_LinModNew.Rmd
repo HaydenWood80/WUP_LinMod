@@ -32,16 +32,16 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ```
 ## Introduction     
 
-we will produce 3 equation models to get
-1. Sim score base on arm strength
-2. Sim score based on grip
-3. Sim score based on both arm and grip strength 
+we will produce 3 equation models to get       
+1. Sim score base on arm strength        
+2. Sim score based on grip        
+3. Sim score based on both arm and grip strength         
 
 for each model we will predict sim for arm=88, grip=94
 
 ## Methods
 
-We have numerical responses (sim score) and numerical explanatory variables which are ( arm and grip strength) 
+We have numerical responses (sim score) and numerical explanatory variables which are ( arm and grip strength)         
 so we use Numerical~Numerical helper file
 
 ## Model 1 SIM~ARMS
@@ -50,6 +50,12 @@ so we use Numerical~Numerical helper file
 
 ### scatterplot
 
+```{r}
+plot(GRIP~ARM,data=data)
+```
+
+There is a positive relatonship between SIMS and ARMS. If this was a perfect linear all the plots would be on a straight line. The corrleation between Arm strength and Sims are .0         
+          
 ### Numerical results
 
 
