@@ -124,7 +124,16 @@ This simulates the correlation between the sims test and overall GRIP strength w
 
 ### Numerical results (cor)
 
-`
+```{r}
+m = data.frame(data['GRIP'],data['ARM'],data['SIMS'])
+cor(m)
+```
+The table shows that SIMS correlates with GRIP in a positive manner (0.64) and SIMS correlates to with ARM also in a positive manner (0.69) This says that these variables are useful in predicting SIMS
+
+```{r}
+plot(data$GRIP,data$ARM)
+```
+  Plot shows the GRIP and ARM and not independent, So this is necisarilly not a good model.
   
 ### Inferential  (Build 2-dimentional model.3)
 
